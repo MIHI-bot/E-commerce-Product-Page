@@ -214,6 +214,9 @@ body .body .first {
   height: auto;
   position: relative;
 }
+body .body .first #carouselExampleControlsNoTouching {
+  display: none;
+}
 body .body .first .images {
   width: 100%;
   height: 25em;
@@ -223,6 +226,7 @@ body .body .first .images {
   border-radius: 10px;
   background-position: center;
   margin-bottom: 2em;
+  display: block;
 }
 body .body .first .imgs > img {
   width: 7em;
@@ -542,9 +546,13 @@ html body .body .desc {
     width: 100%;
     flex-basis: 100%;
   }
+  html body .body .first #carouselExampleControlsNoTouching {
+    display: block;
+  }
   html body .body .first .images {
     border-radius: 0;
     margin-bottom: 2em;
+    display: none;
   }
   html body .body .first .imgs {
     display: none;
@@ -569,7 +577,6 @@ html body .body .desc {
 html body .body .desc .buttons .button {
     width: 90%;
     margin: 0.5em auto;
-    height: 1.5em;
     font-size: 1.25em;
   }
 }/*# sourceMappingURL=commerce.css.map */
